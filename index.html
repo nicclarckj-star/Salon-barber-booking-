@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salon Barber Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    header span {
+      color: #C9A24D;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #444;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 15px 30px;
+      font-size: 16px;
+      background: #C9A24D;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .mpesa {
+      background: #f7f7f7;
+      border-left: 4px solid #C9A24D;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #C9A24D;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Salon<span>Barber</span>Booking</h1>
+  <p>Book trusted salons & barbers near you</p>
+</header>
+
+<section class="hero">
+  <h2>Look Good. Book Easy.</h2>
+  <p>
+    Discover professional salons and barbers, choose a service,
+    book your slot and pay conveniently.
+  </p>
+  <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
+    Book Now
+  </button>
+</section>
+
+<section class="section">
+  <h3>How It Works</h3>
+  <p style="text-align:center;">
+    Choose a service → Book a time → Pay via M-Pesa → Get confirmation
+  </p>
+</section>
+
+<section class="section">
+  <div class="mpesa">
+    <h3>M-Pesa Payment Instructions</h3>
+    <p>
+      After booking, pay directly to the salon using their provided M-Pesa details.
+      <br><br>
+      <strong>Important:</strong>  
+      Use your <strong>Name or Booking Date</strong> as the payment reference.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="booking">
+  <h3>Book Your Appointment</h3>
+
+  <!-- Airtable Form -->
+  <iframe
+    src="https://airtable.com/apprzNk3d3e8juyLD/pag0Ygqz5vIZLGVig/form"
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  © 2026 <span>SalonBarberBooking</span> · All rights reserved
+</footer>
+
+</body>
+  </html>
